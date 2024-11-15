@@ -29,6 +29,8 @@ def processTableData(tbl):
 
 # funcion para extraer los datos URL y procesar el contenido HTML
 def processDataHTML(data):
+
+
     soup = bs(data, 'html.parser')  #Le da estructura al HTML que esta como string
     tbl = soup.find_all('table')[numero_tabla-1]  # recupera la tabla del HTML
     tblRows = processTableData(tbl)  # Ejecucion de la funcion para procesar el contenido de la tabla
@@ -38,6 +40,10 @@ def processDataHTML(data):
 # Leer la webside
 # Declaramos r para hacer lña consulta requests.get('URL')
 req = requests.get(url)
+if req.status_code != 200:
+    print(f'Error al acceder a la pagina: {req.status_code}')
+
+
 print(f'Estado de la solicitud: {req.status_code}')
 
 
