@@ -44,16 +44,12 @@ req = requests.get(url)
 if req.status_code != 200:
     print(f'Error al acceder a la pagina: {req.status_code}')
 
-
-print(f'Estado de la solicitud: {req.status_code}')
-
-
 HTML = req.text #Si se trabaja con content, devuelve un byte. Por eso, se utiliza .text para convertirlo a una cadena (string).
                 #Si se requiere un JSON, se utiliza .json().
 table = processDataHTML(HTML) #No se usa .json() aquí, ya que el contenido es texto HTML.
 df = rowsToDataFrame(table)
 print("DataFrame:\n", df.head(cantidad)) #df.head(n) muestra los primeros n registros del DataFrame.
-df.info()
+#df.info()
 df.to_csv('statsWorldCup.csv', index=False)   #Se genera un archivo CSV donde el índice puede ocultarse o mostrarse:
                                                         #True: Oculta el índice.
                                                         #False: Muestra el índice.
