@@ -1,81 +1,96 @@
-,Pos.,Selección,TJ,Pts.,PJ,PG,PE,PP,GF,GC,Dif.,Títulos,Rend.
-0,1,BrasilBrasil,22,247,114,76,19,19,237,108,129,5,"72,32%"
-1,2,AlemaniaAlemania[n 1]​,20,225,112,68,21,23,232,130,102,4,"66,96%"
-2,3,ArgentinaArgentina,18,158,88,47,17,24,152,101,51,3,"59,84%"
-3,4,ItaliaItalia,18,156,83,45,21,17,128,77,51,4,"62,65%"
-4,5,FranciaFrancia,16,131,73,39,14,20,136,85,51,2,"59,81%"
-5,6,InglaterraInglaterra,16,118,74,32,22,20,104,68,36,1,"53,15%"
-6,7,EspañaEspaña,16,110,67,31,17,19,108,75,33,1,"55,05%"
-7,8,Países BajosPaíses Bajos,11,104,55,30,14,11,96,52,44,-,"63,03%"
-8,9,UruguayUruguay,14,88,59,25,13,21,89,76,13,2,"49,71%"
-9,10,BélgicaBélgica,14,73,51,21,10,20,69,74,-5,-,"47,71%"
-10,11,SueciaSuecia,12,70,51,19,13,19,80,73,7,-,"45,75%"
-11,12,RusiaRusia[n 2]​,11,67,45,19,10,16,77,54,23,-,"49,62%"
-12,13,MéxicoMéxico,17,66,60,17,15,28,62,101,-39,-,"36,66%"
-13,14,SerbiaSerbia[n 3]​,13,63,49,18,9,22,71,71,0,-,"42,85%"
-14,15,PortugalPortugal,8,57,35,17,6,12,61,41,20,-,"54,28%"
-15,16,PoloniaPolonia,9,57,38,17,6,15,49,50,-1,-,"51,35%"
-16,17,SuizaSuiza,12,50,41,14,8,19,55,73,-18,-,"40,65%"
-17,18,HungríaHungría,9,48,32,15,3,14,87,57,30,-,50%
-18,19,CroaciaCroacia,6,47,30,13,8,9,43,33,10,-,"52,22%"
-19,20,República ChecaRepública Checa[n 4]​,9,41,33,12,5,16,47,49,-2,-,"41,41%"
-20,21,AustriaAustria,7,40,29,12,4,13,43,47,-4,-,"45,97%"
-21,22,ChileChile,9,40,33,11,7,15,40,49,-9,-,"40,40%"
-22,23,Estados UnidosEstados Unidos,11,35,37,9,8,20,40,66,-26,-,"31,53%"
-23,24,DinamarcaDinamarca,6,33,23,9,6,8,31,29,2,-,"47,82%"
-24,25,ParaguayParaguay,8,31,27,7,10,10,30,38,-8,-,"38,27%"
-25,26,Corea del SurCorea del Sur,11,31,38,7,10,21,39,78,-39,-,"27,92%"
-26,27,ColombiaColombia,6,30,22,9,3,10,32,30,2,-,"45,45%"
-27,28,RumaniaRumania,7,29,21,8,5,8,30,32,-2,-,"46,03%"
-28,29,JapónJapón,7,27,25,7,6,12,25,33,-8,-,"36,11%"
-29,30,Costa RicaCosta Rica,6,23,21,6,5,10,22,39,-17,-,"36,50%"
-30,31,CamerúnCamerún,8,23,26,5,8,13,22,47,-25,-,"29,48%"
-31,32,MarruecosMarruecos,6,22,23,5,7,11,20,27,-7,-,"31,88%"
-32,33,NigeriaNigeria,6,21,21,6,3,12,23,30,-7,-,"33,33%"
-33,34,EscociaEscocia,8,19,23,4,7,12,25,41,-16,-,"27,53%"
-34,35,SenegalSenegal,3,18,12,5,3,4,16,17,-1,-,50%
-35,36,GhanaGhana,4,18,15,5,3,7,18,23,-5,-,40%
-36,37,PerúPerú,5,18,18,5,3,10,21,33,-12,-,"33,33%"
-37,38,EcuadorEcuador,4,17,13,5,2,6,14,14,0,-,"43,58%"
-38,39,BulgariaBulgaria,7,17,26,3,8,15,22,53,-31,-,"21,79%"
-39,40,TurquíaTurquía,2,16,10,5,1,4,20,17,3,-,"53,33%"
-40,41,AustraliaAustralia,6,16,20,4,4,12,17,37,-20,-,"26,66%"
-41,42,IrlandaIrlanda,3,14,13,2,8,3,10,10,0,-,"35,89%"
-42,43,Irlanda del NorteIrlanda del Norte,3,14,13,3,5,5,13,23,-10,-,"35,89%"
-43,44,TúnezTúnez,6,14,18,3,5,10,14,26,-12,-,"25,92%"
-44,45,Arabia SauditaArabia Saudita,6,14,19,4,2,13,14,44,-30,-,"24,56%"
-45,46,IránIrán,6,13,18,3,4,11,13,31,-18,-,"24,07%"
-46,47,ArgeliaArgelia,4,12,13,3,3,7,13,19,-6,-,"30,76%"
-47,48,Costa de MarfilCosta de Marfil,3,10,9,3,1,5,13,14,-1,-,"37,03%"
-48,49,SudáfricaSudáfrica,3,10,9,2,4,3,11,16,-5,-,"37,03%"
-49,50,NoruegaNoruega,3,9,8,2,3,3,7,8,-1,-,"37,50%"
-50,51,Alemania DemocráticaAlemania Democrática,1,8,6,2,2,2,5,5,0,-,"44,44%"
-51,52,GreciaGrecia,3,8,10,2,2,6,5,20,-15,-,"26,66%"
-52,53,UcraniaUcrania,1,7,5,2,1,2,5,7,-2,-,"46,66%"
-53,54,GalesGales,2,7,8,1,4,3,5,10,-5,-,"29,16%"
-54,55,EslovaquiaEslovaquia,1,4,4,1,1,2,5,7,-2,-,"33,33%"
-55,56,EsloveniaEslovenia,2,4,6,1,1,4,5,10,-5,-,"22,22%"
-56,57,CubaCuba,1,4,3,1,1,1,5,12,-7,-,"44,44%"
-57,58,Corea del NorteCorea del Norte,2,4,7,1,1,5,6,21,-15,-,"19,04%"
-58,59,Bosnia y HerzegovinaBosnia y Herzegovina,1,3,3,1,0,2,4,4,0,-,"33,33%"
-59,60,JamaicaJamaica,1,3,3,1,0,2,3,9,-6,-,"33,33%"
-60,61,Nueva ZelandaNueva Zelanda,2,3,6,0,3,3,4,14,-10,-,"16,66%"
-61,62,HondurasHonduras,3,3,9,0,3,6,3,14,-11,-,"11,11%"
-62,63,AngolaAngola,1,2,3,0,2,1,1,2,-1,-,"22,22%"
-63,64,IsraelIsrael,1,2,3,0,2,1,1,3,-2,-,"22,22%"
-64,65,EgiptoEgipto,3,2,7,0,2,5,5,12,-7,-,"9,52%"
-65,66,IslandiaIslandia,1,1,3,0,1,2,2,5,-3,-,"11,11%"
-66,67,KuwaitKuwait,1,1,3,0,1,2,2,6,-4,-,"11,11%"
-67,68,Trinidad y TobagoTrinidad y Tobago,1,1,3,0,1,2,0,4,-4,-,"11,11%"
-68,69,BoliviaBolivia,3,1,6,0,1,5,1,20,-19,-,"5,55%"
-69,70,IrakIrak,1,0,3,0,0,3,1,4,-3,-,0%
-70,71,TogoTogo,1,0,3,0,0,3,1,6,-5,-,0%
-71,72,CatarCatar,1,0,3,0,0,3,1,7,-6,-,0%
-72,73,IndonesiaIndonesia[n 5]​,1,0,1,0,0,1,0,6,-6,-,0%
-73,74,PanamáPanamá,1,0,3,0,0,3,2,11,-9,-,0%
-74,75,Emiratos Árabes UnidosEmiratos Árabes Unidos,1,0,3,0,0,3,2,11,-9,-,0%
-75,76,ChinaChina,1,0,3,0,0,3,0,9,-9,-,0%
-76,77,CanadáCanadá,2,0,6,0,0,6,2,12,-10,-,0%
-77,78,HaitíHaití,1,0,3,0,0,3,2,14,-12,-,0%
-78,79,República Democrática del CongoR. D. del Congo[n 6]​,1,0,3,0,0,3,0,14,-14,-,0%
-79,80,El SalvadorEl Salvador,2,0,6,0,0,6,1,22,-21,-,0%
+España [+],Octubre 2024,"1,8%",,"2,1%",
+Alemania [+],Octubre 2024,"2,0%",,"2,4%",
+Reino Unido [+],Septiembre 2024,"1,7%",,"1,5%",
+Francia [+],Octubre 2024,"1,2%",,"1,2%",
+Italia [+],Octubre 2024,"0,9%",,"1,3%",
+Portugal [+],Octubre 2024,"2,3%",,"3,1%",
+Estados Unidos [+],Octubre 2024,"2,6%",,"2,9%",
+Japón [+],Septiembre 2024,"2,5%",,"2,0%",
+China [+],Octubre 2024,"0,3%",,"0,3%",
+Andorra [+],Octubre 2024,"1,8%",,"2,3%",
+Armenia [+],Octubre 2024,"0,0%",,"-0,8%",
+Angola [+],Octubre 2024,"29,2%",,"23,4%",
+Argentina [+],Octubre 2024,"193,0%",,"107,0%",
+Austria [+],Septiembre 2024,"1,8%",,"0,8%",
+Australia [+],Junio 2024,"3,8%",,"2,0%",
+Bélgica [+],Octubre 2024,"3,2%",,"2,6%",
+Bulgaria [+],Octubre 2024,"1,9%",,"1,2%",
+Bolivia [+],Octubre 2024,"7,9%",,"7,3%",
+Brasil [+],Octubre 2024,"4,6%",,"3,9%",
+Bielorrusia [+],Enero 2022,"10,4%",,"1,5%",
+Belice [+],Septiembre 2024,"2,6%",,"2,3%",
+Canadá [+],Julio 2024,"2,5%",,"2,4%",
+Suiza [+],Agosto 2024,"1,1%",,"1,2%",
+Chile [+],Diciembre 2023,"3,9%",,"3,9%",
+Colombia [+],Agosto 2024,"6,1%",,"4,3%",
+Costa Rica [+],Septiembre 2022,"10,4%",,"8,4%",
+Chequia [+],Octubre 2024,"2,8%",,"3,2%",
+Dinamarca [+],Octubre 2024,"1,6%",,"2,5%",
+República Dominicana [+],Octubre 2024,"3,2%",,"2,5%",
+Ecuador [+],Octubre 2024,"1,4%",,"1,8%",
+Estonia [+],Octubre 2024,"4,1%",,"4,2%",
+Egipto [+],Enero 2022,"8,0%",,"1,0%",
+Finlandia [+],Octubre 2024,"1,1%",,"1,1%",
+Fiyi [+],Julio 2024,"6,8%",,"2,4%",
+Georgia [+],Noviembre 2022,"10,4%",,"10,1%",
+Ghana [+],Septiembre 2024,"21,5%",,"17,6%",
+Guinea Ecuatorial [+],Julio 2024,"3,4%",,"1,7%",
+Grecia [+],Octubre 2024,"2,4%",,"2,8%",
+Guatemala [+],Marzo 2024,"3,2%",,"0,5%",
+Honduras [+],Diciembre 2022,"9,8%",,"9,8%",
+Hungría [+],Octubre 2024,"3,2%",,"3,5%",
+Indonesia [+],Octubre 2024,"1,7%",,"0,8%",
+Irlanda [+],Octubre 2024,"0,7%",,"1,0%",
+Israel [+],Octubre 2024,"3,5%",,"3,9%",
+India [+],Septiembre 2024,"4,2%",,"3,2%",
+Irán [+],Junio 2023,"48,5%",,,
+Islandia [+],Octubre 2024,"5,1%",,"4,2%",
+Jordania [+],Octubre 2024,"0,8%",,"0,7%",
+Kenia [+],Marzo 2024,"5,7%",,"0,8%",
+Kirguistán [+],Octubre 2024,"4,8%",,"4,2%",
+Camboya [+],Septiembre 2024,"0,8%",,"1,7%",
+Corea del Sur [+],Marzo 2024,"3,1%",,"1,1%",
+Kazajistán [+],Octubre 2024,"8,5%",,"6,6%",
+Laos [+],Octubre 2024,"20,7%",,,
+Líbano [+],Septiembre 2024,"32,9%",,"10,5%",
+Lituania [+],Septiembre 2024,"0,5%",,"1,1%",
+Luxemburgo [+],Octubre 2024,"1,0%",,"1,4%",
+Letonia [+],Octubre 2024,"2,0%",,"2,8%",
+Marruecos [+],Septiembre 2024,"0,8%",,"1,3%",
+Moldavia [+],Diciembre 2023,"-1,2%",,"-1,2%",
+Mongolia [+],Octubre 2024,"7,0%",,"5,8%",
+Mauritania [+],Noviembre 2022,"12,2%",,"8,5%",
+Maldivas [+],Septiembre 2024,"1,1%",,"1,3%",
+México [+],Julio 2024,"5,6%",,"2,7%",
+Mozambique [+],Septiembre 2024,"2,5%",,"1,2%",
+Nigeria [+],Octubre 2024,"33,9%",,"28,2%",
+Nicaragua [+],Octubre 2024,"3,6%",,"1,7%",
+Países Bajos [+],Octubre 2024,"3,6%",,"4,6%",
+Noruega [+],Diciembre 2023,"4,8%",,"4,8%",
+Nueva Zelanda [+],Marzo 2024,"4,0%",,"0,6%",
+Panamá [+],Septiembre 2024,"-0,3%",,"-0,2%",
+Perú [+],Septiembre 2022,"8,8%",,"6,9%",
+Filipinas [+],Noviembre 2023,"4,1%",,"3,8%",
+Pakistán [+],Abril 2024,"17,3%",,"33,8%",
+Polonia [+],Diciembre 2023,"6,2%",,"6,2%",
+Estado de Palestina [+],Diciembre 2018,"0,3%",,"0,3%",
+Paraguay [+],Octubre 2024,"3,6%",,"2,9%",
+Rumanía [+],Octubre 2024,"-95,3%",,"-95,6%",
+Rusia [+],Marzo 2022,"16,7%",,"10,0%",
+Arabia Saudita [+],Septiembre 2024,"1,7%",,"1,3%",
+Seychelles [+],Junio 2024,"0,4%",,"0,8%",
+Suecia [+],Octubre 2024,"1,6%",,"0,5%",
+Eslovenia [+],Octubre 2024,0%,,"1,5%",
+Eslovaquia [+],Septiembre 2023,"8,2%",,"5,7%",
+El Salvador [+],Octubre 2024,"-0,1%",,"0,5%",
+Túnez [+],Octubre 2024,"6,7%",,"5,9%",
+Türkiye [+],Agosto 2022,"80,2%",,"47,9%",
+Trinidad y Tobago [+],Septiembre 2024,"0,4%",,0%,
+Tanzania [+],Septiembre 2024,"3,1%",,"2,2%",
+Ucrania [+],Octubre 2024,"9,7%",,"8,4%",
+Uganda [+],Octubre 2024,"2,9%",,"2,6%",
+Uruguay [+],Octubre 2024,"5,0%",,"4,8%",
+Uzbekistán [+],Septiembre 2024,"10,5%",,"6,5%",
+Venezuela [+],Septiembre 2024,"25,8%",,"12,1%",
+Sudáfrica [+],Febrero 2023,"7,3%",,"0,7%",
+Zimbabue [+],Septiembre 2022,"339,7%",,"261,3%",

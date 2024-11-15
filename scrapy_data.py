@@ -2,6 +2,11 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 
+print('*** Sistema para descargar datos de tablas en html ***')
+url = input('Ingrese la url de la pagina que desea scrapiar: ')
+cantidad = int(input('Ingrese la cantidad de datos que desea descargar: '))
+numero_tabla = int(input('A que tabla del HTML quiere extraer la informacion: '))
+print('<------------------------------------------------------->')
 
 # Funcion para convertir una lista en elementos del dataframe de pandas
 def rowsToDataFrame(rows):
@@ -25,23 +30,22 @@ def processTableData(tbl):
 # funcion para extraer los datos URL y procesar el contenido HTML
 def processDataHTML(data):
     soup = bs(data, 'html.parser')  #Le da estructura al HTML que esta como string
-    tbl = soup.find_all('table')[0]  # recupera la tabla del HTML
+    tbl = soup.find_all('table')[numero_tabla-1]  # recupera la tabla del HTML
     tblRows = processTableData(tbl)  # Ejecucion de la funcion para procesar el contenido de la tabla
     return tblRows
 
 
 # Leer la webside
 # Declaramos r para hacer lña consulta requests.get('URL')
-req = requests.get('https://es.wikipedia.org/wiki/Anexo:Tabla_estad%C3%ADstica_de_la_Copa_Mundial_de_F%C3%BAtbol')
+req = requests.get(url)
 print(f'Estado de la solicitud: {req.status_code}')
 
 
 HTML = req.text #si se trabaja con content te devuelve en un byte, por eso se coloca el .text para que
                 #se haga un string, y si se quiere un json se pone .json()
 table = processDataHTML(HTML) #No use json ya que es el texto HTML de lo que se esta obteniendo.
-print(table)
 df = rowsToDataFrame(table)
-print("DataFrame:\n", df.head(10)) #df.head(n) me muestra n registros que estan al inicio
-#df.info()
+print("DataFrame:\n", df.head(cantidad)) #df.head(n) me muestra n registros que estan al inicio
+df.info()
 df.to_csv('statsWorldCup.csv', index=False)   #aqui se genera un csv y el index tiene la funcion de
                                                         #ocultar o mostrar la cabecera True oculta y False muestra
