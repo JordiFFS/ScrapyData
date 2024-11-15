@@ -30,17 +30,14 @@ def processTableData(tbl):
 
 #Función para extraer los datos de una URL y procesar el contenido HTML
 def processDataHTML(data):
-
-
     soup = bs(data, 'html.parser')  #Estructura el HTML que está en formato de cadena (string).
     tbl = soup.find_all('table')[numero_tabla-1]  #Recupera la tabla del HTML.
     tblRows = processTableData(tbl)  # Ejecución del procesamiento de la función para el contenido de la tabla
     return tblRows
-
-
 #Leer el sitio web.
 #Declarar req para hacer la consulta: requests.get('URL').
 req = requests.get(url)
+dominio=url.split("//")[1].split("/")[0].replace(".", "-")
 if req.status_code != 200:
     print(f'Error al acceder a la pagina: {req.status_code}')
 
@@ -50,6 +47,6 @@ table = processDataHTML(HTML) #No se usa .json() aquí, ya que el contenido es t
 df = rowsToDataFrame(table)
 print("DataFrame:\n", df.head(cantidad)) #df.head(n) muestra los primeros n registros del DataFrame.
 #df.info()
-df.to_csv('statsWorldCup.csv', index=False)   #Se genera un archivo CSV donde el índice puede ocultarse o mostrarse:
+df.to_csv(f'{dominio}.csv', index=False)   #Se genera un archivo CSV donde el índice puede ocultarse o mostrarse:
                                                         #True: Oculta el índice.
                                                         #False: Muestra el índice.
