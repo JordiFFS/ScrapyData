@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup as bs
 
 print('*** Sistema para descargar datos de tablas en HTML ***')
 url = input('Ingrese la URL de la página que desea scrapear: ')
-numero_tabla = int(input('¿A qué tabla del HTML quiere extraer la información? (Número entero): '))
 
 print('<------------------------------------------------------->')
 
@@ -25,23 +24,43 @@ def processTableData(tbl):
             rows.append(row)  # Si row tiene información, la añade a la lista de rows.
     return rows
 
-# Función para extraer los datos de una URL y procesar el contenido HTML
-def processDataHTML(data):
-    soup = bs(data, 'html.parser')  # Estructura el HTML.
-    tbl = soup.find_all('table')[numero_tabla - 1]  # Recupera la tabla del HTML.
-    tblRows = processTableData(tbl)  # Procesa la tabla.
-    return tblRows
+# Función para contar las tablas en el HTML
+def countTables(data):
+    soup = bs(data, 'html.parser')
+    tables = soup.find_all('table')  # Encuentra todas las tablas en el HTML.
+    return len(tables), soup  # Devuelve la cantidad de tablas y el objeto soup.
 
 # Leer el sitio web
 req = requests.get(url)
-dominio = url.split("//")[1].split("/")[0].replace(".", "-")
 
 if req.status_code != 200:
     print(f'Error al acceder a la página: {req.status_code}')
     exit()
 
 HTML = req.text  # Convierte el contenido HTML en texto.
-table = processDataHTML(HTML)  # Procesa los datos de la tabla.
+num_tables, soup = countTables(HTML)
+
+if num_tables == 0:
+    print("No se encontraron tablas en la página.")
+    exit()
+
+print(f'Se encontraron {num_tables} tablas en el HTML.')
+
+# Pedir al usuario que elija una tabla
+numero_tabla = int(input(f'¿A qué tabla del HTML quiere extraer la información? (1-{num_tables}): '))
+
+if numero_tabla < 1 or numero_tabla > num_tables:
+    print("Número de tabla fuera de rango.")
+    exit()
+
+# Procesar la tabla seleccionada
+def processDataHTML(data, numero_tabla):
+    tbl = soup.find_all('table')[numero_tabla - 1]  # Recupera la tabla seleccionada.
+    tblRows = processTableData(tbl)  # Procesa la tabla.
+    return tblRows
+
+table = processDataHTML(HTML, numero_tabla)
+dominio = url.split("//")[1].split("/")[0].replace(".", "-")
 df = rowsToDataFrame(table)
 
 # Solicitar al usuario si desea descargar todos los datos o una cantidad específica
