@@ -19,15 +19,15 @@ if req.status_code != 200:
     exit()
 
 # Convierte el contenido HTML en texto
-HTML = req.text #Convierte el contenido HTML en texto
+HTML = req.text  # Convierte el contenido HTML en texto
 soup = bs(HTML, 'html.parser')  # Estructura el HTML
-texto = soup.get_text(separator=' ', strip=True)  #Extrae todo el texto separado por espacios
+texto = soup.get_text(separator=' ', strip=True)  # Extrae todo el texto separado por espacios
 
 # Imprimir el texto extraído
 print("Texto extraído de la página:\n")
-print(texto) #En consola trae en texto el html
+print(texto)  # En consola trae en texto el html
 
-print("\nAnalizando el texto...\n") #Analizando los datos
+print("\nAnalizando el texto...\n")  # Analizando los datos
 
 # Solicitar el tipo de dato que se desea analizar
 print("Seleccione el tipo de palabra que desea analizar:")
@@ -36,6 +36,8 @@ print("2. VERB (Verbos)")
 print("3. AUX (Auxiliares)")
 print("4. NOUN (Sustamtivo)")
 print("5. ADP (Adposiciones)")
+print("6. # (Hashtags)")
+print("7. EMOJIS (Emojis)")
 opcion = input("Ingrese el número correspondiente a su elección: ")
 
 # Mapear la elección a la etiqueta de SpaCy
@@ -51,6 +53,10 @@ match opcion:
         etiqueta = "DET"
     case "5":
         etiqueta = "ADP"
+    case "6":
+        etiqueta = "#"
+    case "7":
+        etiqueta = "EMOJ"
     case _:
         print("Opción no válida. Terminando el programa.")
         exit()
