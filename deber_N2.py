@@ -1,6 +1,15 @@
 import spacy
 import matplotlib.pyplot as plt
 import re
+"""
+re.search() primera coincidencia en una cadena
+re.match() comprobar si el inicio de la cadena coincide con el patrón
+
+re.split() divide una cadena usando el patrón delimitador
+re.sub() reemplaza las partes de una cadena que coincida con el patrón
+re.findall() devuelve una lista con todas las coincidencias del patrón (usado para encontrar palabras con caracteres o emojis)
+re.compile() Permite usar un objeto de patrón reutilizable 
+"""
 
 nlp = spacy.load("es_core_news_sm")
 
@@ -18,20 +27,22 @@ emoji_pattern = re.compile(
     "\U0001FA70-\U0001FAFF"  # Lugares y edificios
     "\U00002702-\U000027B0"  # Varios símbolos
     "\U000024C2-\U0001F251"  # Caracteres adicionales
-    "]", flags=re.UNICODE
+    "]", flags=re.UNICODE #Especifica el código para ser interpretado de manera correcta fuera del rango ASCII
 )
 
 print("*** Sistema para analizar texto de páginas web ***")
 print('Ingrese el texto que desea analizar puede usar saltos de línea:')
 textos = []
-while True:
-    linea = input()
-    if linea:
+while True: #Bucle el cual se cierra en el break
+    linea = input() #Linea contiene el texto que se ingresa por consola
+    if linea: #Si linea tiene texto se añade la linea a la lista con el metodo append()
         textos.append(linea)
     else:
         break  # Cuando se precione enter sin ingresar texto finaliza la entrada
 
-texto_completo = "".join(textos)
+texto_completo = "".join(textos) #se convirte en una unica linea de texto
+#join concatena todos los elementos de la lista en una sola cadena
+
 
 print("Texto que se va analizar:\n")
 print(texto_completo)  # En consola trae el texto ingresado por el usuario
