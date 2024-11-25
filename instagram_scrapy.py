@@ -64,7 +64,7 @@ for idx, person in enumerate(followers, start=1):
     followers_count = process_profile_with_retry(person)
 #Si el número de seguidores se obtiene correctamente, se agrega al conjunto de datos y se guarda en un archivo CSV parcial.
     if followers_count is not None:
-        data.append({"username": person.username, "followers": followers_count})
+        data.append({"Usuario": person.username, "Seguidores": followers_count})
 
         # Guardar datos parciales en el CSV después de cada consulta
         pd.DataFrame(data).to_csv(output_csv, index=False)
